@@ -85,8 +85,8 @@ namespace TFI.MovieAPI.Services.Implementations
             MovieCreateDto movieDto)
         {
             _logger.LogInformation(
-                "Adding movie with title {Title}",
-                movieDto.Title);
+     "Adding movie with title {Title}",
+     movieDto.Title);
 
             var movie = new Movie
             {

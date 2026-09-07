@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TFI.MovieAPI.Tests/TFI.MovieAPI.Tests.csproj" Id="735e8d4d-d99c-4ecc-9236-59409a512a5b" />
+  <Project Path="TFI.MovieAPI/TFI.MovieAPI.csproj" />
+</Solution>

@@ -13,5 +13,6 @@ namespace TFI.MovieAPI.Data
         public DbSet<Movie> Movies { get; set; }
 
         public DbSet<Director> Directors { get; set; }
+        public DbSet<Actor> Actors { get; set; }
     }
 }

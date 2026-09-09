@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TFI.MovieAPI.Data;
 
@@ -11,9 +12,11 @@ using TFI.MovieAPI.Data;
 namespace TFI.MovieAPI.Migrations
 {
     [DbContext(typeof(TFIDbContext))]
-    partial class TFIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260908034748_AddActor")]
+    partial class AddActor
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

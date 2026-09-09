@@ -21,7 +21,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<TFIDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<IActorService, ActorService>();
 
 var app = builder.Build();
 

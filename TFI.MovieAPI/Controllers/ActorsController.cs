@@ -20,7 +20,10 @@ namespace TFI.MovieAPI.Controllers
         {
             var result = await _actorService.AddActorAsync(actorDto);
 
-            return Ok(result);
+            return CreatedAtAction(
+     nameof(GetActorById),
+     new { id = result.Id },
+     result);
         }
 
         [HttpGet]

@@ -41,7 +41,10 @@ namespace TFI.MovieAPI.Controllers
                 return NotFound("Actor not found");
             }
 
-            return Ok(result);
+            return CreatedAtAction(
+      nameof(GetActorById),
+      new { id = result.Id },
+      result);
         }
     }
 }
